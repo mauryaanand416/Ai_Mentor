@@ -230,6 +230,8 @@ Both Node.js APIs must point to the same PostgreSQL database. For production dat
 
 Required AI configuration is `ai_service/backend/.env` with a real `GEMINI_API_KEY`. Groq, Cloudinary, and D-ID are optional. Missing required configuration stops setup with a clear error; missing optional configuration disables that provider or uses the supported fallback. Redis/Memurai is required for queued video generation, and FFmpeg is required for local video rendering.
 
+See [`docs/ENVIRONMENT.md`](./docs/ENVIRONMENT.md) for the required/optional matrix per service, shared values, minimum working configuration, common setup failures, and how the root runner coordinates the services.
+
 ## Development commands
 
 Run root commands from the repository root.
@@ -309,6 +311,7 @@ CI uses dummy frontend and AI-service values where configuration is required onl
 ## Documentation
 
 - [`initalSetup.md`](./initalSetup.md): first-time environment and database setup
+- [`docs/ENVIRONMENT.md`](./docs/ENVIRONMENT.md): consolidated environment and dependency matrix for all services
 - [`CONTRIBUTING.md`](./CONTRIBUTING.md): branch, commit, validation, review, and security workflow
 - [`backend/README.md`](./backend/README.md): user API setup and endpoints
 - [`backend/BACKEND_DOCUMENTATION.md`](./backend/BACKEND_DOCUMENTATION.md): detailed backend reference

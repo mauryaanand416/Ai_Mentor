@@ -97,6 +97,9 @@ cp ai_service/backend/.env.example ai_service/backend/.env
 
 > **Note the AI service path.** The file lives at
 > `ai_service/backend/.env.example`, **not** `ai_service/.env.example`.
+>
+> For a consolidated required/optional matrix, shared values, and dependency
+> checklist, see [`docs/ENVIRONMENT.md`](./docs/ENVIRONMENT.md).
 
 Your structure should now look like this:
 
